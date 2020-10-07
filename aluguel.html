@@ -1,0 +1,112 @@
+<HTML>
+<HEAD><TITLE>Locadora Animix - ALUGUEL</TITLE>
+<LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css"></HEAD>
+<BODY>
+<CENTER>
+<TABLE WIDTH="800"><TR><TD>
+
+					<p ALIGN="CENTER">
+					<h3 ALIGN="CENTER"> Aluguel </h3>
+					
+					<table WIDTH="100%" CELLPADDING="0">
+					<TH></TH>
+						<tr ALIGN="CENTER"><td>
+							<form NAME="busca" METHOD="POST">
+							T&iacute;tulo <input type="text" name="titulo" size="50" MAXLENGTH="50"><br><h1>(Completo ou parte dele)</h1>
+							<br>G&ecirc;nero 
+								<SELECT NAME="genero" SIZE="1">
+								<OPTION VALUE="dorama" SELECTED>Dorama</OPTION>
+								<OPTION VALUE="anime">Anime</OPTION>
+								</SELECT>
+								<INPUT TYPE="submit" VALUE="Buscar" NAME="buscar">
+							<br>Epis&oacute;dios 
+								<SELECT NAME="epis" SIZE="1">
+<!--Aparecer&aacute; depois da consulta ao BD -->
+								</SELECT>
+							</form>
+							</td></tr>
+							</table>
+<hr WIDTH="50%" NOSHADE COLOR="#FF0000" SIZE="1">
+<br>
+					
+					<table WIDTH="100%">
+					<TH>Dados Pessoais</TH>
+						<tr ALIGN="CENTER"><td>
+<!--Essas informa&ccedil;ões aparecem automaticamente-->
+					<form METHOD="POST" NAME="aluguel">
+						<br>Cliente <input TYPE="Text" NAME="nome" SIZE=50 READONLY>
+						<br>CPF <input TYPE="Text" NAME="cpf" SIZE=11 READONLY>
+						</tr></td>
+					</table>
+					<br>
+					
+					<table WIDTH="100%">
+					<TH> Dados Para o Envio</TH>
+						<tr ALIGN="CENTER"><td>
+<!--a pessoa pode colocar outro endere&ccedil;o que não seja o de sua residencia-->
+							<br>CEP <input type="text" name="cep" size="8" MAXLENGTH="8">
+							<br>Endere&ccedil;o <input type="text" name="end" size="80" MAXLENGTH="80">
+							<br>Complemento <input type="text" name="compl" size="20" MAXLENGTH="20">	Bairro <input type="text" name="bairro" size="20">
+							<br><br><B>Data da entrega</B>
+							<br><br> Dia: 
+							<SELECT NAME="dia" SIZE="1">
+								<OPTION VALUE="1">1</OPTION>
+								<OPTION VALUE="2">2</OPTION>
+								<OPTION VALUE="3">3</OPTION>
+								<OPTION VALUE="4">4</OPTION>
+								<OPTION VALUE="5">5</OPTION>
+								<OPTION VALUE="6">6</OPTION>
+								<OPTION VALUE="7">7</OPTION>
+								<OPTION VALUE="8">8</OPTION>
+								<OPTION VALUE="9">9</OPTION>
+								<OPTION VALUE="10">10</OPTION>
+								<OPTION VALUE="11">11</OPTION>
+								<OPTION VALUE="12">12</OPTION>
+								<OPTION VALUE="13">13</OPTION>
+								<OPTION VALUE="14">14</OPTION>
+								<OPTION VALUE="15">15</OPTION>
+								<OPTION VALUE="16">16</OPTION>
+								<OPTION VALUE="17">17</OPTION>
+								<OPTION VALUE="18">18</OPTION>
+								<OPTION VALUE="19">19</OPTION>
+								<OPTION VALUE="20">20</OPTION>
+								<OPTION VALUE="21">21</OPTION>
+								<OPTION VALUE="22">22</OPTION>
+								<OPTION VALUE="23">23</OPTION>
+								<OPTION VALUE="24">24</OPTION>
+								<OPTION VALUE="25">25</OPTION>
+								<OPTION VALUE="26">26</OPTION>
+								<OPTION VALUE="27">27</OPTION>
+								<OPTION VALUE="28">28</OPTION>
+								<OPTION VALUE="29">29</OPTION>
+								<OPTION VALUE="30">30</OPTION>
+								<OPTION VALUE="31">31</OPTION>
+							</SELECT>
+							M&ecirc;s: <SELECT NAME="mes" SIZE="1">
+								<OPTION VALUE="1">1</OPTION>
+								<OPTION VALUE="2">2</OPTION>
+								<OPTION VALUE="3">3</OPTION>
+								<OPTION VALUE="4">4</OPTION>
+								<OPTION VALUE="5">5</OPTION>
+								<OPTION VALUE="6">6</OPTION>
+								<OPTION VALUE="7">7</OPTION>
+								<OPTION VALUE="8">8</OPTION>
+								<OPTION VALUE="9">9</OPTION>
+								<OPTION VALUE="10">10</OPTION>
+								<OPTION VALUE="11">11</OPTION>
+								<OPTION VALUE="12">12</OPTION>
+							</SELECT><br>
+						</td></tr>
+					</table><br>
+					
+					<CENTER><INPUT TYPE="submit" VALUE="Alugar" NAME="alugar"></CENTER>
+					
+<!--aparecer caixa de mensagens informando que a pessoa deve conferir bem esses dados-->
+					</form>
+					</p>
+			</TD></TR>
+
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
